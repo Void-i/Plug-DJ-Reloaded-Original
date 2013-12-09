@@ -1,0 +1,461 @@
+html, body {
+	height: 100% !important;
+}
+
+#reload-userlist {
+	position: fixed;
+	background: url(http://i.imgur.com/sg06L2W.png);
+	word-wrap: break-word;
+	width: 200px;
+	height: 100%;
+	color: #DBDBDB;
+    box-shadow:  4px 4px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+#userlistHeader {
+	background: url(http://i.imgur.com/sg06L2W.png);
+	border-style: none;
+	width: 100%;
+	height: 35px;
+	padding-left: 8px;
+	font-family: CalgaryScript, Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	color: #DBDBDB;
+	box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+#userlistDiv {
+	width: 100%;
+	background: url(http://i.imgur.com/sg06L2W.png) 0 -1px;
+	margin-top: 8px;
+	padding-left: 8px;
+    position: absolute;
+    bottom: 0;
+	overflow-y: auto;
+	word-wrap: break-word;
+	box-shadow:  0px 0px 12px 2px rgba(0, 0, 0, 0.68);
+}
+
+.userlistParagraph {
+    margin: 0 0 0 -9px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.userlistParagraph:first-of-type {
+    margin: 6px 0 0 -9px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+span.userParaName {
+	font-weight: bold;
+}
+
+#usersPara {
+	font-size: 18px;
+	text-align: center;
+	word-wrap: break-word;
+	margin: 3px;
+	margin-top: 5px;
+}
+
+#user-container {
+    height: 105px;
+    top: 594px;
+}
+
+#ui-reloaded {
+    top: 81px;
+    position: absolute;
+    padding: 4px;
+	cursor: pointer;
+    z-index: 14;
+}
+
+.ui-buttons {
+    background: #000;
+    opacity: .45;
+    width: 155px;
+    height: 17px;
+	line-height: 17px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 15;
+	font-family: ubuntu;
+}
+
+#quick-toggle {
+    top: 4px;
+    left: 166px;
+    position: absolute;
+}
+
+#quickToggleDiv {
+    position: absolute;
+    left: 166px;
+    width: 155px;
+    height: 81px;
+    background: #0C0C0C;
+    opacity: .85;
+    z-index: 15;
+    top: -81px;
+}
+
+.quickToggleButton {
+    background: url(http://i.imgur.com/sg06L2W.png);
+    width: 151px;
+    margin: 2px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 16;
+    font-family: ubuntu;
+}
+
+#hoverSpace {
+    width: 155px;
+    height: 10px;
+    position: absolute;
+    left: 166px;
+    z-index: 16px;
+    top: -4px;
+
+}
+
+.quickToggleButton.autoRespond {
+    height: 17px;
+    line-height: 17px;
+}
+
+.infoPara {
+	font-size: 16px;
+	text-align: center;
+	word-wrap: break-word;
+	margin: 3px;
+	padding: 0px;
+}
+
+.ulButton {
+	font-size: 14px;
+	width: 160px;
+	text-align: center;
+	margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 18px;
+    line-height: 18px;
+	margin: 4px;
+	margin-left: 19px;
+	padding: 0px;
+}
+
+#userlistHide {
+	position: relative;
+	display: inline-block;
+	left: 106px;
+    background: url(http://plug.dj/_/static/images/ButtonOverlayClose.32baaf7.png);
+    top: 3px;
+	height: 23px;
+	width: 24px;
+	cursor: pointer;
+}
+
+.userParaName {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 2px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.imageSpan {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 5px;
+}
+
+.chat-message:nth-child(2n),.chat-emote:nth-child(2n),.chat-update:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.chat-mention:nth-child(1n){
+    background-color: rgba(82, 0, 255, 0.12);
+}
+
+.chat-moderation:nth-child(1n){
+    background-color: rgba(255, 0, 0, 0.09);
+}
+
+.chat-skip:nth-child(1n){
+    background-color: rgba(255, 0, 0, 0.09);
+}
+
+.chat-private-message:nth-child(1n) {
+    background-color: rgba(0, 255, 184, 0.09);
+}
+
+div.chat-private-message {
+    padding: 5px;
+    padding-left: 1px;
+    word-wrap: break-word;
+    width: 308px;
+    position: relative;
+	cursor:pointer;
+}
+
+.chat-manager, .chat-manager {
+	background-image: url("http://i.imgur.com/aeEE6jF.png");
+	background-repeat: no-repeat;
+}
+
+.chat-cohost, .chat-cohost {
+	background-image: url("http://i.imgur.com/Vf1KvPO.png");
+	background-repeat: no-repeat;
+}
+
+.chat-host, .chat-host {
+	background-image: url("http://i.imgur.com/p2FzDNP.png");
+	background-repeat: no-repeat;
+}
+
+.frame-background {
+	opacity: 0.83;
+}
+
+#button-chat-expand {
+	background: url("http://i.imgur.com/6dFswPF.png");
+}
+
+#button-chat-collapse {
+	background: url("http://i.imgur.com/jqbkAOH.png");
+}
+
+#settingsReloaded{
+    margin: auto;
+    z-index: 100000;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 804px;
+    height: 604px;
+    background-color: #131313;
+    background-image: url(http://plug.dj/_/static/images/avatar_overlay_background.f1b6e28.png);
+    box-shadow: 0 0 10px #000;
+    border: 1px solid #444;
+    display: none;
+}
+.settings-overlay-set-button-selected{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border-right: 1px solid #444;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+}
+#notifications{
+    left: 201px;
+}
+#theme{
+    left: 604px;
+}
+#shortcuts{
+    left: 403px;
+}
+#settingsSets{
+    top: 58px;
+    position: absolute;
+}
+.settings-span{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    top: 6px;
+    width: 100%;
+    position: relative;
+    height: 20px;
+}
+.settings-overlay-set-button{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 30px;
+    background: #000 url(http://plug.dj/_/static/images/menu_playlist_item_selected.9e4a8f6.png);
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #444;
+    color: #999;
+    cursor: pointer;
+    text-align: center;
+}
+
+#settingsArea {
+	position: relative;
+	top: 89px;
+	height: 515px;
+	width: 100%;
+	margin: 0px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+}
+
+#functionsDiv{
+    display: block;
+}
+
+#colorInput {
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.colorInput {
+	height: 22px;
+	font-size: 18px;
+	line-height: 22px;
+	margin-right: 5px;
+	width: 84px;
+    float: right;
+    outline: 0 none;
+    border: 0 none;
+}
+
+.settingsDiv{
+    height:512px;
+    top:90px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+.settingsTable{
+    margin: auto;
+    position: absolute;
+    left: 2px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 800px;
+    height:  510px;
+    text-align: center;
+}
+.settingsButton{
+    color: #FFF;
+}
+.chat-RA {
+	background: url(http://i.imgur.com/CTH0TVJ.png) no-repeat 0 5px;
+    padding-left: 17px;
+    width: 292px;
+}
+
+.modal-background{
+    height: 0 !important;
+    width: 0 !important;
+}
+
+#modalBackground{
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 10;
+    display: none;
+}
+
+#user-container .frame-background {
+    opacity: .45;
+}
+
+.toggleIndicator{
+    border-radius: 50px;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    margin: 5px;
+    top: 0;
+}
+
+.divButton {
+    z-index: 10000;
+    position: relative;
+    width: 251px;
+    font-size: 16px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 24px;
+    line-height: 26px;
+    margin: 4px;
+    background-color: rgba(10, 12, 14, 0.4);
+}
+
+.recommendButton {
+    bottom: 6px;
+    margin: auto;
+    position: absolute;
+    width: 790px;
+    z-index: 10000;
+    font-size: 16px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 24px;
+    line-height: 26px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 12, 14, 0.4);
+}
+
+.userlistSpan {
+	padding: 0px;
+	padding-top: 2px;
+	padding-left: 5px;
+	font-size: 13px;
+	font-weight: 500;
+	font-family: Calibri;
+}
+
+.colorLabel {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+input.textInput {
+    height: 22px;
+    line-height: 22px;
+    width: 605px;
+    border: 0 none;
+    outline: 0 none;
+}
+
+.reload-rule{
+    border-top: 0px;
+    border-color: #58FAF4;
+}
+
+.settings-thing{
+    color: #58FAF4;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.noticeSpan {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9900), color-stop(100%,#ff002a));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.settingsDiv.shown {
+    display: block !important;
+}
